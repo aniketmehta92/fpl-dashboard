@@ -1,0 +1,20 @@
+# This repo is PUBLIC and must contain nothing but the rendered dashboard.
+# Deny everything, then allow exactly the two files that belong here.
+*
+!index.html
+!.gitignore
+!README.md
+
+# Belt-and-braces: never allow these even if the rules above are edited.
+*.json
+*.env
+.env*
+*.token
+*token*
+*secret*
+*credential*
+.mcp.json
+coverage/
+.claude/
+fplenv/
+logs/
